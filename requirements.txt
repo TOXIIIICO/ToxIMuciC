@@ -20,6 +20,7 @@ pyyaml
 pyyaml==5.3.1
 pyromod~=1.5
 requests
+telegraph
 speedtest-cli
 spotipy
 tgcrypto
