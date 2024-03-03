@@ -14,14 +14,6 @@ from config import BANNED_USERS
     & filters.group
     & ~BANNED_USERS
 )
-
-
-
-@app.on_message(
-    filters.command(["مرر"], "")
-    & filters.group
-    & ~BANNED_USERS
-)
 @AdminRightsCheck
 async def seek_comm(cli, message: Message, _, chat_id):
     if len(message.command) == 1:
