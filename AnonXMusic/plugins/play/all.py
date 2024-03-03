@@ -8,11 +8,11 @@ from pyrogram import filters
 from pyrogram import Client
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
-from AnonXMusic  import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
-from AnonXMusic  import app
+from AnonXMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from AnonXMusic import app
+from telegraph import upload_file
 from asyncio import gather
 from pyrogram.errors import FloodWait
-
 
 
 
