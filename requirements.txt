@@ -8,9 +8,10 @@ gitpython
 hachoir
 heroku3
 motor
+pytz
 pillow
 psutil
-py-tgcalls==0.9.7
+py-tgcalls==0.9.2
 pykeyboard
 pyrogram==2.0.106
 python-dotenv
@@ -23,3 +24,4 @@ unidecode
 yt-dlp
 youtube-search
 youtube-search-python
+

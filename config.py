@@ -16,10 +16,10 @@ BOT_TOKEN = getenv("BOT_TOKEN","6430975912:AAFsdPevmYzYz657Q83fzTQs7SFQpheWBB4")
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 6084541))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID","-1002024109201"))
+LOGGER_ID = int(getenv("OWNER_ID","1872738364"))
 
 # Get this value from @FallenxBot on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", 6753126490))
