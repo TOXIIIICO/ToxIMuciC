@@ -18,7 +18,7 @@ from config import BANNED_USERS
 
 
 @app.on_message(
-    filters.command(["تخطي"], "")
+    filters.command(["مرر"], "")
     & filters.group
     & ~BANNED_USERS
 )
