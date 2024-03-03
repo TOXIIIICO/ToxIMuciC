@@ -11,6 +11,7 @@ from AnonXMusic.misc import sudo
 from AnonXMusic.plugins import ALL_MODULES
 from AnonXMusic.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
+from AnonXMusic.plugins.play.azan import azkar
 
 
 async def init():
@@ -55,6 +56,7 @@ async def init():
     await idle()
     await app.stop()
     await userbot.stop()
+    await azkar()
     LOGGER("AnonXMusic").info("Stopping AnonX Music Bot...")
 
 
