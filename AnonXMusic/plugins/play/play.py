@@ -5,12 +5,6 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
-from pyrogram.types import (InlineKeyboardButton,
-                            InlineKeyboardMarkup, Message)
-
-
-
-from pyrogram import enums
 import config
 from AnonXMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
 from AnonXMusic.core.call import Anony
@@ -37,9 +31,8 @@ from AnonXMusic.core.call import Anony
 
 
 
-
-
-@app.on_message(filters.command(["تشغيل","شغل","فيديو","فديو"], ""), group=11135)
+@app.on_message(filters.command(["تشغيل","شغل","فيديو"], "")
+, group=2277402)
 @app.on_message(
     filters.command(
         [
@@ -53,7 +46,8 @@ from AnonXMusic.core.call import Anony
             "cvplayforce",
         ]
     )
-    & ~BANNED_USERS
+    & filters.group
+    & ~BANNED_USERS, group=7277
 )
 @PlayWrapper
 async def play_commnd(
@@ -88,7 +82,7 @@ async def play_commnd(
         tom_c = await get_client(ahmed)
         try:
             await tom_c.join_chat(str(tom_link))
-            await message.reply("احمم يساتر..انا جيت وطالع الكول..")
+            await message.reply("تم انضمام الحساب المساعد بنجاح")
         except Exception as e:
             print(f"حدث خطأ أثناء الانضمام: {str(e)}")
 
